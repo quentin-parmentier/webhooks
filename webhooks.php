@@ -2,7 +2,7 @@
 
 $monfichier = fopen('post.txt', 'r+');
 
-fputs($monfichier, "ça marchre");
+fputs($monfichier, json_encode($_POST));
 fclose($monfichier);
 
 ?>
