@@ -1,8 +1,7 @@
 <?php
 
+unlink("post.txt");
 $monfichier = fopen('post.txt', 'r+');
-
-fputs($monfichier, "                          ");
 fclose($monfichier);
 
 ?>
