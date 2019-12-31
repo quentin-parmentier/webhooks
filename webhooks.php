@@ -27,7 +27,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
     
     $monfichier = fopen('post.txt', 'r+');
-    fputs($monfichier, $isVerified.' : '.$hash.' : '.$sig);
+    $retour = $isVerified.' : '.$hash.' : '.$sig;
+    fputs($monfichier, $retour);
     fclose($monfichier);
 
 }
