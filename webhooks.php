@@ -16,10 +16,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         $isVerified = $hash === $sig;
     }
     
-    $monfichier = fopen('post.txt', 'r+');
-    $retour = $isVerified.' : '.$hash.' : '.$sig;
-    fputs($monfichier, $retour);
-    fclose($monfichier);
+    if($isVerified){
+      exec("git clone https://seokuymi:Pcw1234.@github.com/seokuymi/webhooks.git");
+    }
 
 }
 
