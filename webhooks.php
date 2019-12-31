@@ -2,7 +2,10 @@
 
 $monfichier = fopen('post.txt', 'r+');
 
-fputs($monfichier, json_encode($_SERVER));
+$post_data = file_get_contents('php://input');
+
+//fputs($monfichier, json_encode($_SERVER));
+fputs($monfichier, $post_data);
 fclose($monfichier);
 
 ?>
