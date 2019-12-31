@@ -98,7 +98,7 @@ if($headers_ok && $data_ok) {
 }
 else {
   $monfichier = fopen('post.txt', 'r+');
-  fputs($monfichier, "AAAAAAAA");
+  fputs($monfichier, "AAAAAAAAA");
   fclose($monfichier);
 	http_response_code(403);
 	die("Forbidden\n");
