@@ -1,15 +1,5 @@
 <?php
 
-// $monfichier = fopen('post.txt', 'r+');
-
-//$post_data = file_get_contents('php://input');
-
-//fputs($monfichier, json_encode($_SERVER));
-// fputs($monfichier, $post_data);
-// fclose($monfichier);
-
-
-
 // If the request is a POST request then we're getting a real webhook callback.
 if($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Default to not verified state.
